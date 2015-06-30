@@ -5,5 +5,8 @@ export default class HookUp {
         return false;
     }
 
+    listMultiples(n) {
+        return [];
+    }
 }
 
