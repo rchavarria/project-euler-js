@@ -1,0 +1,26 @@
+{
+  "name": "project-euler-js",
+  "version": "0.0.0",
+  "description": "Proposed solutions to Project Euler problems, in JavaScript (ES6)",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rchavarria/project-euler-js.git"
+  },
+  "author": "Rubén Chavarría http://rchavarria.github.io",
+  "license": "GPLv2.0",
+  "devDependencies": {
+    "babel": "~4.0.2",
+    "mocha": "~1.21.4",
+    "chai": "~1.9.1",
+    "sinon": "~1.10.3",
+    "sinon-chai": "~2.5.0",
+    "gulp": "~3.8.8",
+    "gulp-babel": "~4.0.0",
+    "gulp-spawn-mocha": "~2.0.1",
+    "gulp-eslint": "~0.7.0"
+  }
+}
