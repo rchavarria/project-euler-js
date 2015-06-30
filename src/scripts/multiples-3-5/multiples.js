@@ -4,12 +4,14 @@ export default class SumOfMultiples {
     listMultiples(n) {
         let multiples = [];
 
-        if (n > 3) {
-            multiples.push(3);
-        }
+        for (let i = 1; i < n; i++) {
+            if (i % 3 === 0) {
+                multiples.push(i);
+            }
 
-        if (n > 5) {
-            multiples.push(5);
+            if (i === 5) {
+                multiples.push(5);
+            }
         }
 
         return multiples;

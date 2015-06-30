@@ -22,6 +22,13 @@ describe('Problem #1: Multiple of 3 and 5', () => {
             expect(multiples).to.contain(5);
         });
 
+        it('returns all multiples of 3 below a given number', () => {
+            let multiples = new SumOfMultiples().listMultiples(8);
+
+            expect(multiples).to.contain(3);
+            expect(multiples).to.contain(6);
+        });
+
     });
 
 });
