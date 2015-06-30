@@ -1,3 +1,6 @@
+function isMultipleOf(candidate, divisor) {
+    return candidate % divisor === 0;
+}
 
 export default class SumOfMultiples {
 
@@ -5,14 +8,13 @@ export default class SumOfMultiples {
         let multiples = [];
 
         for (let i = 1; i < n; i++) {
-            if (i % 3 === 0) {
+            if (isMultipleOf(i, 3)) {
                 multiples.push(i);
             }
 
-            if (i % 5 === 0) {
+            if (isMultipleOf(i, 5)) {
                 multiples.push(i);
             }
-
         }
 
         return multiples;
