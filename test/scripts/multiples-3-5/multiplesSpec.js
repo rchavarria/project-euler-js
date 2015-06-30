@@ -57,5 +57,20 @@ describe('Problem #1: Multiple of 3 and 5', () => {
 
     });
 
+    describe('Solution', () => {
+
+        it('checks problem description', () => {
+            let sumOfMultiples = new SumOfMultiples();
+            expect(sumOfMultiples.sumMultiplesOf3And5Below(10)).to.equal(23);
+        });
+
+        it('solves Project Euler problem #1', () => {
+            let sumOfMultiples = new SumOfMultiples();
+            let solution = 233168;
+            expect(sumOfMultiples.sumMultiplesOf3And5Below(1000)).to.equal(solution);
+        });
+
+    });
+
 });
 

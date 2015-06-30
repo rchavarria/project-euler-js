@@ -23,5 +23,10 @@ export default class SumOfMultiples {
         return multiples.reduce((a, b) => a + b, 0);
     }
 
+    sumMultiplesOf3And5Below(n) {
+        let multiples = this.listMultiples(n);
+        return this.sum(multiples);
+    }
+
 }
 
