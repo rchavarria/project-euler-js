@@ -12,6 +12,13 @@ describe('Problem #1: Multiple of 3 and 5', () => {
             expect(new HookUp().listMultiples(1)).to.have.length(0);
         });
 
+        it('returns multiples of 3 below the given number', () => {
+            let multiples = new HookUp().listMultiples(5);
+
+            expect(multiples).to.have.length(1);
+            expect(multiples).to.contain(3);
+        });
+
     });
 
 });
