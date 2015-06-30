@@ -20,7 +20,7 @@ export default class SumOfMultiples {
     }
 
     sum(multiples) {
-        return 10;
+        return multiples.reduce((a, b) => a + b, 0);
     }
 
 }

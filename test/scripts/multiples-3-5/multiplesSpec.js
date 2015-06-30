@@ -51,6 +51,8 @@ describe('Problem #1: Multiple of 3 and 5', () => {
             let sumOfMultiples = new SumOfMultiples();
 
             expect(sumOfMultiples.sum([ 1, 2, 3, 4 ])).to.equal(10);
+            expect(sumOfMultiples.sum([ 1, 3, 5, 7 ])).to.equal(16);
+            expect(sumOfMultiples.sum([ 2, 4, 6, 8, 10 ])).to.equal(30);
         });
 
     });
