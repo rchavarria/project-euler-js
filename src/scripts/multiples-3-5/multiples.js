@@ -9,9 +9,10 @@ export default class SumOfMultiples {
                 multiples.push(i);
             }
 
-            if (i === 5) {
-                multiples.push(5);
+            if (i % 5 === 0) {
+                multiples.push(i);
             }
+
         }
 
         return multiples;
