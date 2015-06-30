@@ -5,25 +5,18 @@ function isMultipleOf(candidate, divisor) {
 export default class SumOfMultiples {
 
     listMultiples(n) {
-        let multiples = [];
+        let multiples = new Set();
         let divisors = [ 3, 5 ];
 
         for (let i = 1; i < n; i++) {
             divisors.forEach((divisor) => {
                 if (isMultipleOf(i, divisor)) {
-                    multiples.push(i);
+                    multiples.add(i);
                 }
             });
-            // if (isMultipleOf(i, 3)) {
-            //     multiples.push(i);
-            // }
-
-            // if (isMultipleOf(i, 5)) {
-            //     multiples.push(i);
-            // }
         }
 
-        return multiples;
+        return Array.from(multiples);
     }
 }
 

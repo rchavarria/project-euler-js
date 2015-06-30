@@ -36,6 +36,13 @@ describe('Problem #1: Multiple of 3 and 5', () => {
             expect(multiples).to.contain(10);
         });
 
+        it('returns multiples of 3 and 5 below a given number only once', () => {
+            let multiples = new SumOfMultiples().listMultiples(20);
+
+            // [ 3, 5, 6, 9, 10, 12, 15 (only once), 18 ].length === 8
+            expect(multiples).to.have.length(8);
+        });
+
     });
 
 });
