@@ -45,5 +45,15 @@ describe('Problem #1: Multiple of 3 and 5', () => {
 
     });
 
+    describe('#sum', () => {
+
+        it('sums all elements in an array', () => {
+            let sumOfMultiples = new SumOfMultiples();
+
+            expect(sumOfMultiples.sum([ 1, 2, 3, 4 ])).to.equal(10);
+        });
+
+    });
+
 });
 

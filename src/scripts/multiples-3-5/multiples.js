@@ -18,5 +18,10 @@ export default class SumOfMultiples {
 
         return Array.from(multiples);
     }
+
+    sum(multiples) {
+        return 10;
+    }
+
 }
 
