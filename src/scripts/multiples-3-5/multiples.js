@@ -1,9 +1,5 @@
 
-export default class HookUp {
-
-    isFalse() {
-        return false;
-    }
+export default class SumOfMultiples {
 
     listMultiples(n) {
         let multiples = [];
